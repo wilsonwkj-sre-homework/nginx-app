@@ -45,7 +45,7 @@ jobs:
     - name: Build, tag, and push Docker image to ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: sre-homework-nginx-app
+        ECR_REPOSITORY: sre-homework-nginx-app-lab
         IMAGE_TAG: latest
       run: |
         docker build -t sre-homework-nginx-app .
